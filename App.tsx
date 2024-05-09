@@ -1,8 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import AdminScreen from './src/pages/admin/AdminScreen';
+import ShelterScreen from './src/pages/admin/ShelterScreen';
 import HomeScreen from './src/pages/home/HomeScreen';
-import PetScreen from './src/pages/pets/PetScreen';
+import PetsScreen from './src/pages/pets/PetsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -11,8 +11,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Admin" component={AdminScreen} />
-        <Stack.Screen name="Pet" component={PetScreen} />
+        <Stack.Screen name="Shelter" component={ShelterScreen} />
+        <Stack.Screen name="Pets" component={PetsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
